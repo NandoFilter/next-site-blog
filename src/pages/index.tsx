@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { Geist, Geist_Mono } from "next/font/google";
 
 const geistSans = Geist({
@@ -14,6 +15,8 @@ export default function Home() {
   return (
     <div className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] justify-items-center items-center min-h-screen min-w-full p-8 bg-black font-[family-name:var(--font-geist-sans)]`}>
       <h1 className="text-4xl text-slate-200">Hello World</h1>
+
+      <Button variant="secondary">Click Me</Button>
     </div>
   );
 }
