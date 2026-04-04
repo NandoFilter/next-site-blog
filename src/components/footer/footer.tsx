@@ -9,9 +9,9 @@ export const Footer = () => {
           <Logo />
 
           <nav className="flex flex-col md:flex-row lg:items-center gap-4 text-sm text-muted-foreground">
-            <Link href="/termos-de-uso" className="hover:text-primary">Termos de uso</Link>
-            <Link href="/politica-de-privacidade" className="hover:text-primary">Polítca de Privacidade</Link>
-            <Link href="/feedback" className="hover:text-primary">Feedback</Link>
+            <Link href="/termos-de-uso" className="hover:text-primary">Termos de Uso</Link>
+            <Link href="/politica-de-privacidade" className="hover:text-primary">Política de Privacidade</Link>
+            <Link href="/feedback" className="hover:text-primary">Enviar feedback</Link>
           </nav>
         </div>
       </div>
