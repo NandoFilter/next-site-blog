@@ -1,16 +1,12 @@
 import { HeartHandshakeIcon, PaintbrushVerticalIcon, StoreIcon } from "lucide-react"
-import { PT_Sans_Caption } from "next/font/google"
-
-const ptSansCaption = PT_Sans_Caption({
-  subsets: ["latin"],
-  weight: "700",
-})
 
 export const SupportSection = () => {
   return (
     <section className="pb-8 md:py-10 bg-gradient-to-r from-gray-500 to-gray-700">
       <div className="container flex flex-col items-center gap-12">
-        <h2 className={`${ptSansCaption.className} text-balance text-center text-heading-xl text-gray-100`}>Sua loja de afiliados, simples, do jeito que deveria ser</h2>
+        <h2 className="font-sans text-balance text-center text-heading-xl text-gray-100">
+          Sua loja de afiliados, simples, do jeito que deveria ser
+        </h2>
 
         <div className="grid gap-6 md:grid-cols-3">
           {/* Primeiro Card */}
@@ -19,7 +15,7 @@ export const SupportSection = () => {
               <PaintbrushVerticalIcon className="h-6 w-6 text-white" />
             </div>
 
-            <strong className="text-heading-sm text-gray-100">
+            <strong className="font-sans text-heading-sm text-gray-100">
               Personalize seu site
             </strong>
             <p className="text-body-sm text-gray-100">
@@ -33,7 +29,7 @@ export const SupportSection = () => {
               <StoreIcon className="h-6 w-6 text-white" />
             </div>
 
-            <strong className="text-heading-sm text-gray-100">
+            <strong className="font-sans text-heading-sm text-gray-100">
               Venda de qualquer loja
             </strong>
             <p className="text-body-sm text-gray-100">
@@ -47,7 +43,7 @@ export const SupportSection = () => {
               <HeartHandshakeIcon className="h-6 w-6 text-white" />
             </div>
 
-            <strong className="text-heading-sm text-gray-100">
+            <strong className="font-sans text-heading-sm text-gray-100">
               Receba suporte amigável
             </strong>
             <p className="text-body-sm text-gray-100">
