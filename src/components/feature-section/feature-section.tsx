@@ -50,6 +50,7 @@ export const FeatureSection = () => {
                 width={440}
                 height={330}
                 className="object-cover w-full"
+                loading="eager"
               />
             </div>
 
