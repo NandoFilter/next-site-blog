@@ -1,6 +1,7 @@
 import { Search } from "@/components/search";
 import { useRouter } from "next/router";
 import { PostCard } from "./components/post-card";
+import { PostGridCard } from "./components/post-grid-card";
 
 export function BlogList() {
   const router = useRouter()
@@ -10,7 +11,7 @@ export function BlogList() {
 
   return (
     <div className="flex flex-col py-24 flex-grow h-full">
-      <header className="">
+      <header className="pb-14">
         <div className="container space-y-6 flex flex-col items-start justify-between md:flex-row md:items-end lg:items-end">
           <div className="flex flex-col gap-4 md:px-0">
             {/* Tag */}
@@ -30,17 +31,19 @@ export function BlogList() {
       </header>
 
       {/* Listagem de Posts */}
-      <PostCard
-        slug="transformando"
-        title="Como criar um blog com Next.js e MDX"
-        description="Aprenda a criar um blog moderno usando Next.js e MDX para escrever posts com Markdown e componentes React."
-        image="/assets/primeiro-post.png"
-        date="10 de junho de 2024"
-        author={{
-          name: "João Silva",
-          avatar: "/customer-01.png"
-        }}
-      />
+      <PostGridCard>
+        <PostCard
+          slug="transformando"
+          title="Como criar um blog com Next.js e MDX"
+          description="Aprenda a criar um blog moderno usando Next.js e MDX para escrever posts com Markdown e componentes React."
+          image="/assets/primeiro-post.png"
+          date="10 de junho de 2024"
+          author={{
+            name: "João Silva",
+            avatar: "/customer-01.png"
+          }}
+        />
+      </PostGridCard>
     </div>
   )
 }
