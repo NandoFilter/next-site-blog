@@ -30,7 +30,17 @@ export function BlogList() {
       </header>
 
       {/* Listagem de Posts */}
-      <PostCard />
+      <PostCard
+        slug="transformando"
+        title="Como criar um blog com Next.js e MDX"
+        description="Aprenda a criar um blog moderno usando Next.js e MDX para escrever posts com Markdown e componentes React."
+        image="/assets/primeiro-post.png"
+        date="10 de junho de 2024"
+        author={{
+          name: "João Silva",
+          avatar: "/customer-01.png"
+        }}
+      />
     </div>
   )
 }
