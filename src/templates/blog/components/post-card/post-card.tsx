@@ -31,7 +31,7 @@ export const PostCard = (post: PostCardProps) => {
 
           <Image
             src={post.image}
-            alt=""
+            alt={post.title}
             width={288}
             height={144}
             className="w-full h-40 object-cover object-center rounded-lg"
