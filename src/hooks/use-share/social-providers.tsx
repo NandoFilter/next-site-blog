@@ -1,4 +1,3 @@
-import { LinkIcon } from 'lucide-react'
 import Image from 'next/image'
 
 export type ShareConfig = {
@@ -7,7 +6,7 @@ export type ShareConfig = {
   text?: string
 }
 
-export type SocialProvider = 'linkedin' | 'facebook' | 'slack' | 'copyLink'
+export type SocialProvider = 'linkedin' | 'facebook' | 'slack' | 'clipboard'
 
 export const SOCIAL_PROVIDERS = {
   linkedin: {
@@ -24,10 +23,5 @@ export const SOCIAL_PROVIDERS = {
     name: 'Slack',
     icon: <Image src={'/assets/icons/slack.svg'} alt="Slack" width={16} height={16} />,
     shareUrl: (config: ShareConfig) => `https://slack.com/share?url=${encodeURIComponent(config.url)}&text=${encodeURIComponent(config.title || '')}`,
-  },
-  copyLink: {
-    name: 'Copiar link',
-    icon: <LinkIcon className="h-4 w-4" />,
-    shareUrl: (config: ShareConfig) => config.url,
-  },
+  }
 }
